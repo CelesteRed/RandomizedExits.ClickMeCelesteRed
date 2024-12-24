@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Define an array of URLs
+            const urls = [
+                "https://www.youtube.com/watch?v=1400fzt0SHU",
+                "https://www.youtube.com/watch?v=u8ccGjar4Es",
+                "https://www.youtube.com/watch?v=q4vUaMeZhZ4&themeRefresh=1",
+                "https://books.googleusercontent.com/books/content?req=AKW5Qaf3uN52V9sLTrISmD8TbT-s4zzs_1aE2h8SHMiFw5PLQuXNyw2jVSoREiU4CH3LC-RTFwWnxo4tbOTqu4Cu7KD9P6vII7fJ8Yij7VMEI8B0oi1BKP-o2ABdFZA1-rS1y2Ty6I2XnMVz6igu7wl75dNUXj7vpTy1ed7by2hCh9SDUIZY5SeATHdOIa-Tlvjtbh3qCbSqci_FNa-PGuOvCaU6fI5Z1pWOCQoPX_a3cMcOcGOeXtuHQLGSLl-yNDcedvlyZuKokK1OGhaZmjqUG_6B7MfruQ",
+                "https://www.youtube.com/watch?v=8mTGeX6cZzI&t=1259s",
+                "https://www.youtube.com/watch?v=b4XpMTUlorc",
+                "https://www.youtube.com/watch?v=nmG1om-nP_0",
+                "https://www.youtube.com/watch?v=kUefUxDWCjs",
+                "https://www.youtube.com/watch?v=sgpTnx-4yyc",
+                "https://www.youtube.com/watch?v=bBv2BRYob7Q",
+                "https://www.youtube.com/watch?v=ewLDENofstc",
+                "https://www.youtube.com/watch?v=8o7G1YkM3Ng"
+            ];
+
+            // Select a random URL from the array
+            const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+            // Redirect the user to the selected URL
+            window.location.href = randomUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>I wouldn't remember this if I was you... <a href="#">click here</a>.</p>
+</body>
+</html>
